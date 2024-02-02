@@ -1,0 +1,56 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Formulário</title>
+	<style>
+	
+	.box{
+		text-align: center;
+		border: 1px solid rgb(0, 0, 0, 0.3);
+		padding: 30px;
+		width: 600px;
+		margin: 0 auto;
+		margin-top: 50px;
+	}
+
+	.texto{
+		font-size: 30px;
+		font-family: "Arial", "sans-serif";
+	}
+
+	.email, .senha{
+		width: 400px;
+		height: 45px;
+		text-align: center;
+		margin-bottom: 10px;
+		border: 1px solid rgb(0, 0, 0, 0.3);
+	}
+		
+	.ent{
+		background-color: #5a189a;
+		color: white;
+		width: 200px;
+		height: 50px;
+		margin-top: 20px;
+		text-transform: uppercase;
+		border: 1px solid #5a189a;
+		cursor: pointer;
+	}
+
+	</style>
+</head>
+<body>
+
+	<div class="box">
+		<h1 class="texto">Bem Vindo</h1><br>
+		
+		<form action="/enviar_login" method="post">
+			<input type="text" placeholder="E-Mail" class="email" name="email"><br>
+			<input type="password" placeholder="Senha" class="senha" name="senha"><br>
+			<button type="submit" class="ent">Entrar</button>
+		</form>
+
+	</div>
+	
+</body>
+</html>
